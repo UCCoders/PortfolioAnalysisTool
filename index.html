@@ -21,12 +21,21 @@
         <div>
             <form>
                 <fieldset>
+                    
                   <div class="form-group">
+<div class="row">
+<div class="col">
                     <label for="ticker">Stock Ticker</label>
                     <input type="text" class="form-control" id="ticker" aria-describedby="tickerHelp">
                     <small id="tickerHelp" class="form-text text-muted">Please type your stock ticker.</small>
                   </div>
-
+<div class="col">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="form-control" id="quantity" aria-describedby="quantityHelp">
+                    <small id="quantityHelp" class="form-text text-muted">Please identify the quantity.</small>
+                  </div>
+</div>
+</div>
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </fieldset>
               </form>
