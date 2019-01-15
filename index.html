@@ -13,67 +13,47 @@
             <div class="navbar-header">
                 <a class="navbar-brand" href="/">Portfolio Analysis Tool</a>
             </div>
-            <ul class="nav navbar-nav navbar-right">
-                <a id="startupLink" class="navbar-brand" href="/js/registration.js">Please Register</a>
-            </ul>
         </div>
     </nav>
     <div class="row full-height">
-        <div style="margin-left: 40;">
-            <form>
-                <fieldset>
-                    <div class="form-row">
-                        <div class='col-sm-4'>
-                            <div class="form-group">
-                                <label for="portfolioName">Portfolio Name</label>
-                                <input type="text" class="form-control" id="portfolioName" aria-describedby="portfolioNameHelp">
-                                <small id="portfolioNameHelp" class="form-text text-muted">Please type your portfolio
-                                    name - it is used to help organize stocks, you can have many.</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <button type="button" id="addPortfolioButton" class="btn btn-primary" style="margin-top: 20;">Add Portfolio</button>
-                    </div>
-                </fieldset>
-            </form>
+        <div class="row row-sm-4" style="margin-left: 40; margin-right:40;">
+            <p></p>
+            <p>The <strong>Portfolio Analysis Tool</strong> is intended to help store information about different portfolios in one place. The tool accesses stock data to evaluate the current value of the portfolios.</p>
+            <p>To support the evaluation of the Portfolio Analysis Tool, this website uses cookies to store your information. Cookies are stored on your computer and are accessed by this website to remember your settings. This data is not shared and there is no intent of sharing this data. This data is secured on your computer and not accessable by other computers.</p>
+            <p><strong>Alpha Vantage</strong> is the provider of the stock data. To meet the requirements of the Alpha Vantage terms and conditions, it is best for each user to have their own Alpha Vantage access key.</p>
+            <p>Please visit <a href="https://www.alphavantage.co/support/#api-key">this site</a> to claim your key and input it in the Alpha Vantage API Key Text box below.</p>
         </div>
-        <div style="margin-left: 40;">
-            <form>
-                <fieldset>
-                    <div class="form-row">
-                        <div class='col-sm-3'>
-                            <div class="form-group">
-                                <label for="ticker">Stock Ticker</label>
-                                <input type="text" class="form-control" id="ticker" aria-describedby="tickerHelp">
-                                <small id="tickerHelp" class="form-text text-muted">Please type your stock ticker.</small>
+        <div class="row row-sm-4">
+            <div style="margin-left: 40;">
+                <form>
+                    <fieldset>
+                        <div class="form-row">
+                            <div class='col-sm-3'>
+                                <div class="form-group">
+                                    <label for="userName">Name</label>
+                                    <input type="text" class="form-control" id="userName" aria-describedby="userNameHelp">
+                                    <small id="userNameHelp" class="form-text text-muted">Please provide your name.</small>
+                                </div>
                             </div>
-                        </div>
-                        <div class='col-sm-3'>
-                            <div class="form-group">
-                                <label for="quantity">Quantity</label>
-                                <input type="number" class="form-control" id="quantity" aria-describedby="quantityHelp">
-                                <small id="quantityHelp" class="form-text text-muted">Please identify the quantity.</small>
+                            <div class='col-sm-3'>
+                                <div class="form-group">
+                                    <label for="apiKey">Alpha Vantage API Key</label>
+                                    <input type="text" class="form-control" id="apiKey" aria-describedby="apiKeyHelp">
+                                    <small id="apiKeyHelp" class="form-text text-muted">Please provide an API key to
+                                        allow access to live stock data from Alpha Vantage.</small>
+                                </div>
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <div class="form-group">
-                                <label for="portfolioSelect">Select Portfolio</label>
-                                <select class="form-control" id="portfolioSelect">
-                                    <option>Default</option>
-                                </select>
-                            </div>
+                            <button type="button" id="submitRegistration" class="btn btn-primary" style="margin-top: 20;">Register</button>
                         </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <button type="submit" class="btn btn-primary" style="margin-top: 20;">Add Stock to Portfolio</button>
-                    </div>
-
-                </fieldset>
-            </form>
+                    </fieldset>
+                </form>
+            </div>
         </div>
     </div>
 </body>
-<script src="js/app.js"></script>
-<script src="js/addPortfolio.js"></script>
+<script src="js/cookies.js"></script>
+<script src="js/registration.js"></script>
+
 </html>

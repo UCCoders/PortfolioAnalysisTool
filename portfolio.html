@@ -1,0 +1,79 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio Analysis Tool</title>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap-yeti.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <nav class="navbar navbar-default" style="margin-bottom: 0;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/portfolio.html">Portfolio Analysis Tool</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <a id="userNameLink" class="navbar-brand" href="/portfolio.html"></a>
+            </ul>
+        </div>
+    </nav>
+    <div class="row full-height">
+        <div style="margin-left: 40;">
+            <form>
+                <fieldset>
+                    <div class="form-row">
+                        <div class='col-sm-4'>
+                            <p></p>
+                            <div class="form-group">
+                                <label for="portfolioName">Portfolio Name</label>
+                                <input type="text" class="form-control" id="portfolioName" aria-describedby="portfolioNameHelp">
+                                <small id="portfolioNameHelp" class="form-text text-muted">Please type your portfolio
+                                    name - it is used to help organize stocks, you can have many.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <p></p>
+                        <button type="button" id="addPortfolioButton" class="btn btn-primary" style="margin-top: 20;">Add Portfolio</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div style="margin-left: 40;">
+            <form>
+                <fieldset>
+                    <div class="form-row">
+                        <div class='col-sm-3'>
+                            <div class="form-group">
+                                <label for="ticker">Stock Ticker</label>
+                                <input type="text" class="form-control" id="ticker" aria-describedby="tickerHelp">
+                                <small id="tickerHelp" class="form-text text-muted">Please type your stock ticker.</small>
+                            </div>
+                        </div>
+                        <div class='col-sm-3'>
+                            <div class="form-group">
+                                <label for="quantity">Quantity</label>
+                                <input type="number" class="form-control" id="quantity" aria-describedby="quantityHelp">
+                                <small id="quantityHelp" class="form-text text-muted">Please identify the quantity.</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <label for="portfolioSelect">Select Portfolio</label>
+                                <select class="form-control" id="portfolioSelect">
+                                    <option>Default</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <button type="button" class="btn btn-primary" style="margin-top: 20;">Add Stock to Portfolio</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="js/cookies.js"></script>
+<script src="js/portfolio.js"></script>
+<script src="js/addPortfolio.js"></script>
+</html>
